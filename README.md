@@ -19,7 +19,7 @@ Unity 上で構築した演出を、そのまま動画として書き出すこ�
 編集用の元動画を準備してください。
 
 - 録画開始：`Windowsキー + ALT + R`
-- 録画した動画（`*.mp4`）を Unity に取り込みます
+- 後に、録画した動画（`*.mp4`）を UnityのProjectの \Assets\Video　等に取り込みます
 
 ---
 
@@ -37,7 +37,7 @@ Unity 上で構築した演出を、そのまま動画として書き出すこ�
 
 1. **Window > Package Manager** を開く  
 2. **Unity Registry** から検索  
-3. 以下を **Install**
+3. 以下二つを **Install**
 
 - Unity UI  
 - Recorder  
@@ -55,7 +55,7 @@ Assets > Timeline > Timeline
 
 ---
 
-## ⏺ Recorder Track がない場合の設定
+## ⏺ もしも Recorder Track がない場合の設定
 
 Timeline に Recorder Track が存在しない場合は、以下の手順で追加してください。
 
@@ -65,7 +65,8 @@ Timeline に Recorder Track が存在しない場合は、以下の手順で追�
 2. `UnityEditor.Recorder.Timeline` を選択  
 3. **Recorder Track** を追加  
 4. Recorder Track に **Recorder Clip** を追加  
-- 緑色のアンダーライン付きクリップが表示されます  
+- 緑色のアンダーライン付きクリップが表示されます
+- こちらが無いと録画がされません
 
 ---
 
@@ -97,7 +98,7 @@ Timeline に Recorder Track が存在しない場合は、以下の手順で追�
 
 - **Control Track**  
 ヒエラルキー上のオブジェクトを  
-アクティブ／非アクティブに制御します。
+アクティブ／非アクティブ制御します。
 
 ---
 
@@ -106,13 +107,13 @@ Timeline に Recorder Track が存在しない場合は、以下の手順で追�
 Hierarchy の「＋」ボタンから、以下のオブジェクトを追加できます。
 
 - **MovieMake / Audio**  
-音声ファイル（`.mp3`）
+音声ファイル（`.mp3`）用Object
 
 - **MovieMake / Movie**  
-動画ファイル（`.mp4`）
+動画ファイル（`.mp4`）用Object
 
 - **MovieMake / UI_Image**  
-画像（`*.psd` / Sprite）
+画像（`*.psd` / Sprite）用Object
 
 ※ UI や画像のレイアウトは、  
 授業で学んだ方法と同様に **Scene ビュー上で編集**してください。
